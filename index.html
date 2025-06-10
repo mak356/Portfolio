@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Muhammad Khan</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <header> 
+    <nav class="navbar">
+      <div class="logo">Muhammad Khan</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="header-buttons">
+        <button id="darkModeToggle">🌙</button>
+      </div>
+    </nav>
+  </header>
+
+  <section id="hero" class="hero" data-aos="fade-up">
+    <div class="hero-text">
+      <h1>Welcome to My Portfolio</h1>
+      <p>Passionate Developer. Creative Designer. Problem Solver. Transforming ideas into stunning digital experiences with modern technologies and innovative solutions.</p>
+      <a href="#projects" class="btn">View Projects</a>
+    </div>
+    <div class="hero-img" data-aos="fade-left">
+      <img src="./profile.jpg" alt="Profile" loading="lazy" />
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 data-aos="zoom-in">My Projects</h2>
+    <div class="project-container">
+      <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+        <img src="./moogle.png" alt="Moogle" loading="lazy" />
+        <h3>Moogle</h3>
+        <p>Minimalist Search Engine Interface with Responsive Design.</p>
+        <div class="btn-group">
+          <a href="https://mak356.github.io/Moogle/" class="btn live">Live Demo</a>
+          <a href="https://mak356.github.io/HTML-Code/" class="btn code">Code</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" data-aos="fade-up">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer data-aos="fade-in">
+    <p>&copy; 2025 Muhammad Khan. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+</body>
+</html>
